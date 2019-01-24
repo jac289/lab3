@@ -22,10 +22,13 @@ function initializePage() {
     if (description.length == 0) {
        $(containingProject).append("<div class='project-description'><p>Description of the project.</p></div>");
     } else {
-       $(containingProject).fadeIn("<div class='project-description'><p>Description of the project.</p></div>");
-	}
-
+    	 $(containingProject).fadeIn();
+    	 $(containingProject).fadeOut();
+         $(containingProject).fadeToggle();
 	// Add any additional listeners here
 	// example: $("#div-id").click(functionToCall);
 }
+
+}
+
 }
